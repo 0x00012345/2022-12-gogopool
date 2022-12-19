@@ -52,13 +52,13 @@ const config: HardhatUserConfig = {
   defaultNetwork: "hardhat",
   networks: {
     localhost: {
-      chainId: 1,
+      chainId: 522,
       accounts: accounts.map(({ privateKey }) => privateKey),
       allowUnlimitedContractSize: true,
       forking: buildForkConfig(),
     },
     hardhat: {
-      chainId: 1,
+      chainId: 31337,
       accounts,
       allowUnlimitedContractSize: true,
       forking: buildForkConfig(),
